@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+    <meta charset="UTF-8">
+    <title>Części</title>
+</head>
+<body>
+    <div id="menu">
+        <a href="strona.html"> Powrót</a>
+    </div>
+    <div class = "flex">
+        <div class = "image" id = "a"><p>{{ part1.nazwa }}</p>
+            <p>{{ part1.marka }}</p>
+            <p>{{ part1.stan }}</p>
+            <p>{{ part1.cena }}</p></div>
+        <div class = "image" id = "b"><p>{{ part2.nazwa }}</p>
+            <p>{{ part2.marka }}</p>
+            <p>{{ part2.stan }}</p>
+            <p>{{ part2.cena }}</p></div>
+        <div class = "image" id = "c"><p>{{ part3.nazwa }}</p>
+            <p>{{ part3.marka }}</p>
+            <p>{{ part3.stan }}</p>
+            <p>{{ part3.cena }}</p></div>
+        <div class = "image" id = "d"><p>{{ part4.nazwa }}</p>
+            <p>{{ part4.marka }}</p>
+            <p>{{ part4.stan }}</p>
+            <p>{{ part4.cena }}</p></div>
+        <div class = "image" id = "e"><p>{{ part5.nazwa }}</p>
+            <p>{{ part5.marka }}</p>
+            <p>{{ part5.stan }}</p>
+            <p>{{ part5.cena }}</p></div>
+        <div class = "image" id = "f"><p>{{ part6.nazwa }}</p>
+            <p>{{ part6.marka }}</p>
+            <p>{{ part6.stan }}</p>
+            <p>{{ part6.cena }}</p></div>
+    </div>
+</body>
+</html>
