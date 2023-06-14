@@ -1,0 +1,45 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+    <meta charset="UTF-8">
+    <title>motocykle</title>
+</head>
+<body>
+    <div id="menu">
+        <a href="strona.html"> Powrót</a>
+    </div>
+    <div class = "flex">
+        <div class = "image" id = "honda">
+            <p>Model: {{ motorcycle1.model }}</p>
+            <p>Marka: {{ motorcycle1.marka }}</p>
+            <p>Rok: {{ motorcycle1.rocznik }}</p>
+            <p>Cena: {{ motorcycle1.cena }} zł</p></div>
+        <div class = "image" id = "kawasaki">
+            <p>Model: {{ motorcycle2.model }}</p>
+            <p>Marka: {{ motorcycle2.marka }}</p>
+            <p>Rok: {{ motorcycle2.rocznik }}</p>
+            <p>Cena: {{ motorcycle2.cena }} zł</p></div>
+        <div class = "image" id = "suzuki">
+            <p>Model: {{ motorcycle3.model }}</p>
+            <p>Marka: {{ motorcycle3.marka }}</p>
+            <p>Rok: {{ motorcycle3.rocznik }}</p>
+            <p>Cena: {{ motorcycle3.cena }} zł</p></div>
+        <div class = "image" id = "yamaha">
+            <p>Model: {{ motorcycle4.model }}</p>
+            <p>Marka: {{ motorcycle4.marka }}</p>
+            <p>Rok: {{ motorcycle4.rocznik }}</p>
+            <p>Cena: {{ motorcycle4.cena }} zł</p></div>
+        <div class = "image" id = "KTM">
+            <p>Model: {{ motorcycle5.model }}</p>
+            <p>Marka: {{ motorcycle5.marka }}</p>
+            <p>Rok: {{ motorcycle5.rocznik }}</p>
+            <p>Cena: {{ motorcycle5.cena }} zł</p></div>
+        <div class = "image" id = "harley">
+            <p>Model: {{ motorcycle6.model }}</p>
+            <p>Marka: {{ motorcycle6.marka }}</p>
+            <p>Rok: {{ motorcycle6.rocznik }}</p>
+            <p>Cena: {{ motorcycle6.cena }} zł</p></div>
+    </div>
+</body>
+</html>
