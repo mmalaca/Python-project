@@ -1,0 +1,86 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/checkout.css') }}">
+    <meta charset="UTF-8">
+    <title>Formularz zakupu samochodu</title>
+</head>
+<body>
+    <h1>Formularz zakupu samochodu</h1>
+    <form method="POST" action="{{ url_for('process_checkout') }}">
+        <div class="form-group">
+            <label for="imie">Imię:</label>
+            <input type="text" id="imie" name="imie" required pattern="[A-Za-z]+">
+            {% if imie_error %}
+                <p class="error-message">{{ imie_error }}</p>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="nazwisko">Nazwisko:</label>
+            <input type="text" id="nazwisko" name="nazwisko" required pattern="[A-Za-z]+">
+            {% if nazwisko_error %}
+                <p class="error-message">{{ nazwisko_error }}</p>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="ulica">Ulica:</label>
+            <input type="text" id="ulica" name="ulica" required>
+            {% if ulica_error %}
+                <p class="error-message">{{ ulica_error }}</p>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="numer_domu">Numer domu:</label>
+            <input type="text" id="numer_domu" name="numer_domu" required pattern="[0-9]+">
+            {% if numer_domu_error %}
+                <p class="error-message">{{ numer_domu_error }}</p>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="numer_mieszkania">Numer mieszkania:</label>
+            <input type="text" id="numer_mieszkania" name="numer_mieszkania" pattern="[0-9]+">
+            {% if numer_mieszkania_error %}
+                <p class="error-message">{{ numer_mieszkania_error }}</p>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="miasto">Miasto:</label>
+            <input type="text" id="miasto" name="miasto" required pattern="[A-Za-z]+">
+            {% if miasto_error %}
+                <p class="error-message">{{ miasto_error }}</p>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="numer_karty">Numer karty kredytowej:</label>
+            <input type="text" id="numer_karty" name="numer_karty" required pattern="[0-9]+">
+            {% if numer_karty_error %}
+                <p class="error-message">{{ numer_karty_error }}</p>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="cvv">CVV:</label>
+            <input type="text" id="cvv" name="cvv" required pattern="[0-9]+">
+            {% if cvv_error %}
+                <p class="error-message">{{ cvv_error }}</p>
+            {% endif %}
+        </div>
+
+        <div class="form-group">
+            <label for="data_zakonczenia">Data zakończenia:</label>
+            <input type="month" id="data_zakonczenia" name="data_zakonczenia" required>
+            {% if data_zakonczenia_error %}
+                <p class="error-message">{{ data_zakonczenia_error }}</p>
+            {% endif %}
+        </div>
+
+        <button type="submit">Kup samochód</button>
+    </form>
+</body>
+</html>

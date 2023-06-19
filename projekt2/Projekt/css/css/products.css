@@ -1,0 +1,110 @@
+body{
+    background-color: rgb(84, 126, 150);
+}
+#menu {
+    width: 33%;
+    margin-bottom: 5px;
+}
+a{
+    background-color: rgb(48, 114, 153);
+    color: black;
+    text-decoration: none;
+    font-size: 50px;
+    border: solid;
+}
+a:hover{
+    background-color: blue;
+}
+.flex{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex > div {
+    font-size: 30px;
+  }
+.image{
+    width: 550px;
+    height: 400px;
+    transition: 0.5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: center;
+    background-size: cover;
+    border: solid;
+    flex-direction: column;
+}
+.image p{
+    opacity:0;
+    transform: scale(0);
+    transition: 0.8;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    margin: auto;
+}
+.image:hover{
+    box-shadow: 0 0 0 300px rgba(0,0,0,0.9) inset;
+}
+.image:hover p{
+    opacity: 1;
+    transform: scale(1);
+}
+#golf{
+    background-image: url(golf.jpg);
+}
+#bmw{
+    background-image: url(bmw.jpg);
+}
+#merol{
+    background-image: url(merol.jpg);
+}
+#audi{
+    background-image: url(audi.jpg);
+}
+#mustang{
+    background-image: url(mustang.jpg);
+}
+#toyota{
+    background-image: url(toyota.jpg);
+}
+#honda{
+    background-image: url(honda.jpg);
+}
+#kawasaki{
+    background-image: url(kawasaki.jpg);
+}
+#suzuki{
+    background-image: url(suzuki.jpg);
+}
+#yamaha{
+    background-image: url(yamaha.jpg);
+}
+#KTM{
+    background-image: url(KTM.jpg);
+}
+#harley{
+    background-image: url(harley.jpg);
+}
+#hamulec{
+    background-image: url(hamulec.jpg);
+}
+#opona{
+    background-image: url(opona.jpg);
+}
+#tlumik{
+    background-image: url(tlumik.jpg);
+}
+#swiece{
+    background-image: url(swiece.jpg);
+}
+#filtr{
+    background-image: url(filtr.jpg);
+}
+#tarcze{
+    background-image: url(tarcze.jpg);
+}
