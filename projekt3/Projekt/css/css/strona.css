@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(84, 126, 150);
+}
+#menu {
+    height: 50%;
+    width: 33%;
+    margin: auto;
+    margin-top: 20%;
+}
+a{
+    background-color: rgb(48, 114, 153);
+    text-decoration: none;
+    font-size: 50px;
+    border: solid;
+    color: black;
+}
+a:hover{
+    background-color: blue;
+}
+.flex{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+.flex > div {
+    font-size: 30px;
+    padding: 2%;
+    outline: 2px;
+  }

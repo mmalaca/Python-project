@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/process_finished.css') }}">
+    <meta charset="UTF-8">
+    <title>Proces zakończony</title>
+</head>
+<body>
+    <h1>Dziękujemy za zakupy na naszej stronie!</h1>
+    <p>Informacje o zakupie:</p>
+    <ul>
+        <li>Imię: {{ imie }}</li>
+        <li>Nazwisko: {{ nazwisko }}</li>
+        <li>Ulica: {{ ulica }}</li>
+        <li>Numer domu: {{ numer_domu }}</li>
+        <li>Numer mieszkania: {{ numer_mieszkania }}</li>
+        <li>Miasto: {{ miasto }}</li>
+        <li>Numer karty kredytowej: {{ numer_karty }}</li>
+        <li>CVV: {{ cvv }}</li>
+        <li>Data zakończenia: {{ data_zakonczenia }}</li>
+    </ul>
+</body>
+</html>

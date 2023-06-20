@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+    <meta charset="UTF-8">
+    <title>Samochody</title>
+</head>
+<body>
+    <div id="menu">
+        <a href="strona.html"> Powrót</a>
+    </div>
+    <div class = "flex">
+        <div class = "image" id = "golf">
+            <p>Marka: {{ car1.marka }}</p>
+            <p>Model: {{ car1.model }}</p>
+            <p>Rocznik: {{ car1.rocznik }}</p>
+            <p>Skrzynia: {{ car1.skrzynia }}</p>
+            <p>Cena: {{ car1.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+        <div class = "image" id = "bmw">
+            <p>Marka: {{ car2.marka }}</p>
+            <p>Model: {{ car2.model }}</p>
+            <p>Rocznik: {{ car2.rocznik }}</p>
+            <p>Skrzynia: {{ car2.skrzynia }}</p>
+            <p>Cena: {{ car2.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+        <div class = "image" id = "merol">
+            <p>Marka: {{ car3.marka }}</p>
+            <p>Model: {{ car3.model }}</p>
+            <p>Rocznik: {{ car3.rocznik }}</p>
+            <p>Skrzynia: {{ car3.skrzynia }}</p>
+            <p>Cena: {{ car3.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+        <div class = "image" id = "audi">
+            <p>Marka: {{ car4.marka }}</p>
+            <p>Model: {{ car4.model }}</p>
+            <p>Rocznik: {{ car4.rocznik }}</p>
+            <p>Skrzynia: {{ car4.skrzynia }}</p>
+            <p>Cena: {{ car4.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+        <div class = "image" id = "mustang">
+            <p>Marka: {{ car5.marka }}</p>
+            <p>Model: {{ car5.model }}</p>
+            <p>Rocznik: {{ car5.rocznik }}</p>
+            <p>Skrzynia: {{ car5.skrzynia }}</p>
+            <p>Cena: {{ car5.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+        <div class = "image" id = "toyota">
+            <p>Marka: {{ car6.marka }}</p>
+            <p>Model: {{ car6.model }}</p>
+            <p>Rocznik: {{ car6.rocznik }}</p>
+            <p>Skrzynia: {{ car6.skrzynia }}</p>
+            <p>Cena: {{ car6.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

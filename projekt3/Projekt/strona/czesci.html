@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/products.css') }}">
+    <meta charset="UTF-8">
+    <title>Części</title>
+</head>
+<body>
+    <div id="menu">
+        <a href="strona.html"> Powrót</a>
+    </div>
+    <div class = "flex">
+        <div class = "image" id = "hamulec">
+            <p>nazwa: {{ part1.nazwa }}</p>
+            <p>marka: {{ part1.marka }}</p>
+            <p>stan: {{ part1.stan }}</p>
+            <p>cena: {{ part1.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+        <div class = "image" id = "opona">
+            <p>nazwa: {{ part2.nazwa }}</p>
+            <p>marka: {{ part2.marka }}</p>
+            <p>stan: {{ part2.stan }}</p>
+            <p>cena: {{ part2.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+        <div class = "image" id = "tlumik">
+            <p>nazwa: {{ part3.nazwa }}</p>
+            <p>marka: {{ part3.marka }}</p>
+            <p>stan: {{ part3.stan }}</p>
+            <p>cena: {{ part3.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+        <div class = "image" id = "swiece">
+            <p>nazwa: {{ part4.nazwa }}</p>
+            <p>marka: {{ part4.marka }}</p>
+            <p>stan: {{ part4.stan }}</p>
+            <p>cena: {{ part4.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+        <div class = "image" id = "filtr">
+            <p>nazwa: {{ part5.nazwa }}</p>
+            <p>marka: {{ part5.marka }}</p>
+            <p>stan: {{ part5.stan }}</p>
+            <p>cena: {{ part5.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+        <div class = "image" id = "tarcze">
+            <p>nazwa: {{ part6.nazwa }}</p>
+            <p>marka: {{ part6.marka }}</p>
+            <p>stan: {{ part6.stan }}</p>
+            <p>cena: {{ part6.cena }} zł</p>
+            <form action="checkout.html">
+                <button type="submit">kup</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
